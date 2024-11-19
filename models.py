@@ -3,6 +3,18 @@ from sqlalchemy.ext.declarative import declarative_base
 
 Base = declarative_base()
 
+class User(Base):
+    __tablename__ = 'users'
+    id = Column(Integer, primary_key=True)
+    phone_number = Column(String, unique=True)
+    full_name = Column(String)
+    role = Column(String)
+    emergency_contact = Column(String)
+    state = Column(String)  # To keep track of where the user is in the signup/login process
+    ride_state = Column(String) 
+    current_latitude = Column(String)
+    current_longitude = Column(String)
+
 class Ride(Base):
     __tablename__ = 'rides'
     id = Column(Integer, primary_key=True)
