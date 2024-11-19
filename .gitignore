@@ -1,0 +1,45 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+env/
+ENV/
+.venv/
+
+# Python cache files
+*.pyc
+
+# Flask cache files
+instance/
+*.log
+*.pot
+*.pyc
+
+# Database files
+*.sqlite3
+*.db
+*.db-journal
+
+# Environment variables
+.env
+.env.*
+
+# Compiled files
+*.out
+*.so
+
+# IDE files
+.vscode/
+.idea/
+*.iml
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Dependency directories
+node_modules/
